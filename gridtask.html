@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#fff8d8;
+}
+
+/* Main Grid */
+
+.container{
+    display:grid;
+    grid-template-rows:auto auto auto auto auto auto;
+}
+
+/* Header */
+
+header{
+    background:#4b4444;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Navigation */
+
+nav{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background:#6a655d;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+/* Welcome */
+
+.welcome{
+    width:70%;
+    margin:30px auto;
+    border:1px solid black;
+    background:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* About */
+
+.about{
+    width:70%;
+    margin:20px auto;
+    border:1px solid black;
+    background:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Product Grid */
+
+.products{
+
+    width:80%;
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+/* Card */
+
+.card{
+    border:1px solid gray;
+    background:white;
+    text-align:center;
+    padding:15px;
+}
+
+.card img{
+    width:150px;
+    height:150px;
+}
+
+.card h3{
+    margin:10px;
+}
+
+.card p{
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+    background:orange;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>LOGO</h1>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <section class="welcome">
+            <h2>Welcome To My Website</h2>
+            <p>This website is created using HTML and CSS Grid Layout.</p>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We provide quality products with attractive design and affordable prices.</p>
+        </section>
+
+        <section class="products">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5wHhtuH4KD6QvFp2VI3TQbg-UKqBep0Omt03ydsZ61g&s=10">
+                <h3>Wireless Headphone</h3>
+                <p>₹899</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcGfuZI58egpvTN0hpX8ybcOI-4Qaw0WCIBxpH9x14BQ&s=10">
+                <h3>Smart Watch</h3>
+                <p>₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGfA9M99SeC3dnOhzsLnr-uVIXKgrOQARkWJhbwpZeWw&s=10">
+                <h3>Speaker</h3>
+                <p>₹999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0TTDAaMFxlTS49gOmF7xnNLMPL3Tgm5OhhZgkORpCQ&s=10">
+                <h3>Mouse</h3>
+                <p>₹499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4mr2U6GiKJIEYqZvY-17EioL1yfIduR-0YhAehRRR2A&s=10">
+                <h3>Keyboard</h3>
+                <p>₹699</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVEyxbLPiW1CPOo3XDktBLQBZ712FwcOBpJQ9tiFoujQ&s=10">
+                <h3>Power Bank</h3>
+                <p>₹1499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_CP6xvxBoLzFyHgUa01MTu_ivNKBr17brKbi1HZXQQ&s=10">
+                <h3>Earbuds</h3>
+                <p>₹1199</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RYjjlfwcfRn9RGb4pAVPPy2T7hBtyUFWxXLZsowJ0Q&s=10">
+                <h3>Laptop Stand</h3>
+                <p>₹799</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </section>
+
+        <footer>
+            ©2026 My Website. All Rights Reserved.
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
