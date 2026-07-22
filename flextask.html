@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container{
+            background-color: black;
+            height: 300px;
+            width: 300px;
+        }
+
+        #one{
+            height: 30px;
+            width: 250px;
+            background-color: gray;
+            margin: 10px auto;
+        }
+
+        #container2{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #two{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .one1{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+        }
+
+        .two2{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+        }
+
+        .three3{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+        }
+
+        #three{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .four{
+            height: 50px;
+            width: 100px;
+            background-color: yellow;
+        }
+
+        .five{
+            height: 50px;
+            width: 80px;
+            background-color: orange;
+        }
+
+        .six{
+            width: 250px;
+            height: 50px;
+            background-color: white;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="one"></div>
+
+        <div id="container2">
+
+            <div id="two">
+                <div class="one1"></div>
+                <div class="two2"></div>
+                <div class="three3"></div>
+            </div>
+
+            <div id="three">
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+
+            <div class="six"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
